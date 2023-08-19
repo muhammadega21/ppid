@@ -1,0 +1,61 @@
+footer {
+    grid-area: footer;
+    color: #fff;
+}
+
+footer header {
+    text-align: center;
+    background-color: rgb(29, 29, 29);
+    padding-bottom: 10px;
+}
+
+footer header .web-title {
+    padding-top: 20px;
+    line-height: 20px;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+footer header .web-title h1 {
+    font-weight: 500;
+    color: #fff;
+}
+
+footer header .web-title h1 span {
+    font-weight: 700;
+    color: var(--red);
+}
+
+footer header .web-title h4 {
+    font-weight: 400;
+    color: #fff;
+    text-align: start;
+}
+
+footer header .social-media {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+footer header .social-media i {
+    transform: scale(1);
+    transition: 0.1s;
+    color: #fff;
+}
+
+footer header .social-media i:hover {
+    transform: scale(1.1);
+}
+
+footer .footer {
+    font-size: 14px;
+    display: block;
+    text-align: start;
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    padding: 6px;
+}

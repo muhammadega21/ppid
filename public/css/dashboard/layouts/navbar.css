@@ -1,0 +1,80 @@
+nav {
+    grid-area: header;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: right;
+    margin: 10px;
+    border-radius: 5px;
+    min-width: 625px;
+}
+
+nav .nav-link {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 2rem;
+    position: relative;
+}
+
+nav .nav-link .header {
+    position: absolute;
+    left: 20px;
+}
+
+nav .nav-link .mode {
+    display: flex;
+    align-self: flex-start;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 2rem;
+    position: relative;
+    top: 20%;
+    cursor: pointer;
+}
+
+nav .nav-link .mode .light {
+    background-color: #008cff;
+    padding: 4px 8px;
+    color: white !important;
+    transition: 0.2s;
+}
+
+nav .nav-link .mode .dark {
+    padding: 4px 8px;
+    transition: 0.2s;
+}
+
+nav .nav-link .mode .light:hover,
+nav .nav-link .mode .dark:hover {
+    opacity: 0.8;
+}
+
+nav .nav-link .username {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-right: 10px;
+    color: #323232;
+    text-align: end;
+}
+
+nav .nav-link .username strong {
+    font-weight: 600;
+    color: black;
+}
+
+nav .nav-link .userProfile {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+nav .nav-link .userProfile img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}

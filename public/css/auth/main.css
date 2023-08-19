@@ -1,0 +1,92 @@
+.form-input .is-invalid::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: red;
+    height: 1px;
+}
+
+.form-input .is-invalid input~i {
+    color: red !important;
+}
+
+.form-input .input-box {
+    position: relative;
+    margin: 10px 0;
+}
+
+.form-input .input-box input {
+    border: none;
+    outline: none;
+    padding: 6px 10px 6px 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    width: 100%;
+    transition: .2s;
+    font-size: 14px;
+    background: none;
+}
+
+.form-input .input-box i {
+    font-size: 18px;
+}
+
+.form-input .input-box i:not(#showPassword) {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .2s;
+}
+
+.form-input .input-box #showPassword {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    scale: 1;
+    transform: translateY(-50%);
+    transition: .1s;
+}
+
+.form-input .input-box #showPassword:active {
+    scale: .9;
+}
+
+.form-input .input-box input:focus~i {
+    color: #008cff;
+}
+
+.form-input .input-box input:focus {
+    border-bottom: 1px solid #008cff;
+}
+
+.form-input button {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #008cff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    height: 34px;
+    border-radius: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.form-input button:hover {
+    opacity: .8;
+}
+
+.action a {
+    font-size: 14px;
+    color: #006cc5;
+    transition: .2s;
+}
+
+.action a:hover {
+    color: #008cff;
+}

@@ -1,0 +1,11 @@
+.container {
+    display: grid;
+    grid-template-areas: "sidebar header""sidebar content";
+    grid-template-columns: 240px calc(100% - 240px);
+    grid-template-rows: 80px auto;
+}
+
+.content {
+    grid-area: content;
+    margin: 10px;
+}

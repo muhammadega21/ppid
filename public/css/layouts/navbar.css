@@ -1,0 +1,36 @@
+nav {
+    grid-area: navbar;
+    position: relative;
+}
+
+.navbar {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 5px;
+}
+
+.navbar ul li a {
+    color: var(--black);
+    font-weight: 500;
+    transform: scale(1);
+    transition: 0.1s;
+}
+
+.navbar ul li a:hover {
+    color: var(--darkblue);
+}
+
+.navbar ul li.active a{
+    color: var(--darkblue);
+}

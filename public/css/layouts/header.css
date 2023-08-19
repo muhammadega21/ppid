@@ -1,0 +1,224 @@
+.header {
+    grid-area: header;
+    background-color: #fff;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+        160deg,
+        rgb(228, 49, 49) 0%,
+        rgba(71, 137, 238, 1) 100%
+    );
+}
+
+.header main {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.header .web-title {
+    line-height: 20px;
+}
+
+.header .web-title h1 {
+    font-weight: 500;
+}
+
+.header .web-title h1 span {
+    font-weight: 700;
+    color: var(--red);
+}
+
+.header .web-title h4 {
+    font-weight: 400;
+}
+
+.header .head-side {
+    display: flex;
+}
+
+.header .head-side .option,
+.header .head-side .form-input form {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.header .head-side .form-input form {
+    position: relative;
+    width: 15rem;
+}
+
+.header .head-side .form-input input {
+    padding: 7px 0;
+    padding-left: 14px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    background: none;
+    width: 100%;
+    border-radius: 40px;
+    transition: 0.1s;
+}
+
+.header .head-side .form-input input:focus {
+    border: 1px solid rgba(0, 140, 255, 0.7);
+    box-shadow: 0 0 7px rgba(0, 140, 255, 0.2);
+}
+
+.header .head-side .form-input button {
+    position: absolute;
+    font-size: 16px;
+    right: 0;
+    cursor: pointer;
+    background: none;
+    background-color: var(--blue);
+    border: none;
+    height: 100%;
+    width: 14%;
+    border-radius: 0px 40px 40px 0px;
+    color: #fff;
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+.header .head-side .form-input button:hover {
+    font-size: 18px;
+}
+
+.header .head-side .form-input button:active {
+    font-size: 14px;
+}
+
+.header .head-side .user-profile {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+.header .head-side .user-profile:hover {
+    transform: scale(1.1);
+}
+
+.header .head-side .user-profile:active {
+    transform: scale(0.9);
+}
+
+.header .head-side .user-profile img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.header .head-side .user-info {
+    z-index: 999;
+    background-color: #fff;
+    position: absolute;
+    right: 5rem;
+    top: 3.4rem;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: none;
+    opacity: 1;
+    animation: fadeIn 0.1s;
+}
+
+.header .head-side .user-info.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.header .head-side .user-info a {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: var(--black);
+    transition: 0.1s;
+}
+
+.header .head-side .user-info a:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--black);
+    opacity: 0.1;
+}
+
+.header .head-side .user-info a:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.header .head-side .user-info a i {
+    font-size: 22px;
+    margin: 0 14px 0 5px;
+    opacity: 0.8;
+}
+
+.header .head-side .user-info a p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header .head-side .user-info .user-name {
+    display: flex;
+    align-items: center;
+}
+
+.header .head-side .user-info .user-name .profile {
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header .head-side .user-info .user-name .profile img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.header .head-side .user-info .user-name .name h4 {
+    max-width: 220px;
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header .head-side .user-info .user-name .name p {
+    font-size: 12px;
+    font-weight: 400;
+}

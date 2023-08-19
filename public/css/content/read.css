@@ -1,0 +1,212 @@
+.read-wrapper {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.read {
+    min-width: 550px;
+    width: calc(100% - 280px);
+    margin-right: 20px;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+.read .top-content .category-content * {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background-color: var(--blue);
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.read .top-content .title,
+.read .top-content .content-writer {
+    text-align: center;
+}
+
+.read .top-content .title h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.read .top-content .content-writer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.read .top-content .content-writer a {
+    color: var(--blue);
+    transition: 0.1s;
+}
+
+.read .top-content .content-writer a:hover {
+    opacity: 0.8;
+}
+
+.read .top-content .content-writer p {
+    opacity: 0.5;
+}
+
+.read .top-content .action {
+    margin: 10px 0;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.read .top-content .action .bx {
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.read .top-content .action .bx-like {
+    background-color: rgb(51, 131, 197);
+}
+
+.read .top-content .action .bx-dislike {
+    background-color: rgb(216, 71, 71);
+}
+
+.read .top-content .action .bx-bookmark {
+    background-color: rgb(20, 138, 138);
+}
+
+.read .body-content .image-content {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.read .body-content .image-content img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.read .body-content .img-sc {
+    margin: 5px 0;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.read .body-content .article {
+    margin: 5px 0;
+}
+
+.read .body-content .article span {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.read .bottom-content {
+    margin-top: 3rem;
+}
+
+.read .bottom-content .action {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.read .bottom-content .action .bx {
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.read .bottom-content .action .bx-like {
+    background-color: rgb(51, 131, 197);
+}
+
+.read .bottom-content .action .bx-dislike {
+    background-color: rgb(216, 71, 71);
+}
+
+.read .bottom-content .action .bx-bookmark {
+    background-color: rgb(20, 138, 138);
+}
+
+.read .action button {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    transform: scale(1);
+    transition: 0.1s;
+}
+
+.read .action button.active {
+    opacity: 1;
+}
+
+.read .action button.active::before {
+    content: "";
+    background-image: url("/img/check.png");
+    background-position: center;
+    background-size: cover;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    right: -5px;
+    background-color: var(--blue);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.read .action button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.read .action button:active {
+    transform: scale(0.9);
+}
+
+.read .tag-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.read .tag-wrapper h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #4e4e4e;
+}
+
+.read .tag-wrapper .list-tag a {
+    margin-left: 2px;
+    color: #5e5e5e;
+    background-color: rgb(214, 214, 214);
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: 0.1s;
+}
+
+.read .tag-wrapper .list-tag a:hover {
+    color: #474747;
+    background-color: rgba(214, 214, 214, 0.9);
+}
+
+.read .comment {
+    margin-top: 5rem;
+}

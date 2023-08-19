@@ -1,0 +1,403 @@
+.post {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    background: #fff;
+    min-width: 625px;
+}
+
+.top a {
+    display: inline-flex;
+    align-items: center;
+    background: var(--blue);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    transform: 1;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.top i {
+    margin-right: 4px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.table {
+    border-collapse: collapse;
+    margin: 20px 0 20px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+}
+
+.table thead tr {
+    background-color: var(--blue);
+    color: #fff;
+    text-align: left;
+    font-weight: 600;
+}
+
+.table tr,
+.table th,
+.table td {
+    padding: 12px 15px;
+    text-align: start;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--blue);
+}
+
+.table form {
+    display: inline;
+}
+
+.table button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+.table button:hover {
+    transform: scale(1.06);
+}
+.table button:active {
+    transform: scale(0.9);
+}
+
+.table i {
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.table #show {
+    background-color: var(--blue);
+}
+
+.table #edit {
+    background-color: #ffc109;
+}
+
+.table #delete {
+    background-color: #dc3545;
+}
+.table tbody tr #action {
+    display: flex;
+    gap: 3px;
+}
+
+.post .form-input .input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.post .form-input .input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    flex-grow: 1;
+}
+
+.post .form-input .input label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.post .form-input .input input:not(#image) {
+    padding: 6px 6px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    background: none;
+    outline: none;
+}
+
+.post .form-input .input input:focus :not(#tag) {
+    border: 1px solid rgba(0, 140, 255, 0.7) !important;
+    box-shadow: 0 0 5px rgba(0, 140, 255, 0.3);
+}
+
+.post .form-input .input .select2-selection {
+    height: 100% !important;
+}
+
+.post .form-input .input .select2 {
+    width: 100% !important;
+}
+
+.upload-file input[type="file"] {
+    display: none;
+}
+
+.upload-file {
+    margin-bottom: 5px;
+}
+
+.upload-file label {
+    color: #fff;
+    background-color: var(--blue);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+.upload-file label i {
+    font-size: 26px;
+    margin-right: 5px;
+}
+
+.upload-file label:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.upload-file label:active {
+    transform: scale(0.9);
+}
+
+.imgPreview {
+    width: 100%;
+    min-height: 125px;
+    max-height: 550px;
+    height: 550px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    position: relative;
+}
+
+.imgPreview::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.imgPreview img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.post .form-input .input .content-wrapper {
+    padding: 10px;
+    position: relative;
+    margin-top: 5px;
+    z-index: 1;
+}
+
+.post .form-input .input .content-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.post .form-input .action {
+    display: flex;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.post .form-input .action button,
+.post .form-input .action a {
+    padding: 12px 16px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+.post .form-input .tag-wrapper {
+    margin-top: 5px;
+    width: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    background: rgba(250, 250, 250, 0.2);
+    border-radius: 5px;
+    padding: 18px 25px 20px;
+}
+
+.post .form-input .tag-wrapper p {
+    font-size: 14px;
+}
+
+.post .form-input .tag-wrapper ul {
+    margin: 5px 0;
+    padding: 7px;
+    border: 1px solid rgba(166, 166, 166, 0.4);
+    border-radius: 5px;
+    background: #fff;
+}
+
+.post .form-input .tag-wrapper :where(ul, li, li i, .details) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.post .form-input .tag-wrapper ul li {
+    background-color: #f2f2f2;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 4px 3px;
+    border-radius: 5px;
+    padding: 5px 8px 5px 10px;
+}
+
+.post .form-input .tag-wrapper ul li i {
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
+    background-color: rgb(214, 214, 214);
+    color: #808080;
+    margin-left: 5px;
+    border-radius: 50%;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.post .form-input .tag-wrapper ul li i:hover {
+    color: #747474;
+    background-color: rgba(214, 214, 214, 0.7);
+}
+
+.post .form-input .tag-wrapper ul input {
+    flex: 1;
+    width: 100%;
+    border: none !important;
+    padding: 5px !important;
+    height: 40px !important;
+    font-size: 16px;
+}
+
+.post .form-input .tag-wrapper .details {
+    justify-content: space-between;
+}
+
+.post .form-input .tag-wrapper .details .action {
+    margin: 0;
+}
+
+.post .form-input .tag-wrapper .details button {
+    padding: 9px 10px;
+}
+
+.action #blue {
+    background-color: var(--blue);
+}
+.action #red {
+    background-color: var(--red);
+}
+.action #black {
+    background-color: #0f0f0f;
+}
+
+.action #blue:hover,
+.action #red:hover,
+.action #black:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.action #blue:active,
+.action #red:active,
+.action #black:active {
+    transform: scale(0.9);
+}
+
+.form-wrapper .form-input {
+    display: flex;
+    justify-content: end;
+}
+
+.form-wrapper .form-input form {
+    position: relative;
+    width: 15rem;
+}
+
+.form-wrapper .form-input input {
+    padding: 7px 0;
+    padding-left: 14px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    background: none;
+    width: 100%;
+    border-radius: 40px;
+    transition: 0.1s;
+}
+
+.form-wrapper .form-input input:focus {
+    border: 1px solid rgba(0, 140, 255, 0.7);
+    box-shadow: 0 0 7px rgba(0, 140, 255, 0.2);
+}
+
+.form-wrapper .form-input button {
+    position: absolute;
+    font-size: 16px;
+    right: 0;
+    cursor: pointer;
+    background: none;
+    background-color: var(--blue);
+    border: none;
+    height: 100%;
+    width: 14%;
+    border-radius: 0px 40px 40px 0px;
+    color: #fff;
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+.form-wrapper .form-input button:hover {
+    font-size: 18px;
+}
+
+.form-wrapper .form-input button:active {
+    font-size: 14px;
+}

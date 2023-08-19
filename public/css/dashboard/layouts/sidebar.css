@@ -1,0 +1,74 @@
+.sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    float: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar header {
+    text-align: center;
+    margin: 15px 0 20px 0;
+    line-height: 25px;
+}
+
+.sidebar header h1 {
+    font-weight: 500;
+}
+
+.sidebar header h1 span {
+    font-weight: 700;
+    color: var(--red);
+}
+
+.sidebar header h4 {
+    font-weight: 400;
+
+}
+
+
+.sidebar header h4 {
+
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.sidebar .side-link ul li {
+    font-size: 14px;
+}
+
+.sidebar .side-link ul li span {
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: 600;
+    color: #4d4d4d;
+    opacity: .8;
+}
+
+.sidebar .side-link ul li a {
+    color: #323232;
+    display: block;
+    padding: 10px 16px;
+    position: relative;
+    left: 0;
+    transition: .2s;
+}
+
+.sidebar .side-link ul li a:hover {
+    left: 8px;
+}
+
+.sidebar .side-link ul li.active {
+    background-color: rgba(110, 165, 228, 0.2);
+    border-left: 6px solid #008cff;
+}
+
+.sidebar .side-link ul li.active a {
+    color: #008cff;
+}
+
+.sidebar .side-link ul li i {
+    margin-right: 5px;
+}

@@ -1,0 +1,230 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: #2e2e2e;
+}
+
+.header {
+    text-align: center;
+    margin: 15px 0 10px 0;
+    line-height: 25px;
+}
+
+.header h1 {
+    font-weight: 500;
+}
+
+.header h1 span {
+    font-weight: 700;
+    color: var(--red);
+}
+
+.header h4 {
+    font-weight: 400;
+}
+
+.header h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.container {
+    width: 900px;
+    height: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container main {
+    display: flex;
+    height: 100%;
+}
+
+.container main .left {
+    width: 30%;
+    margin: auto 0;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+    background-color: #fff;
+    margin-left: 10px;
+}
+
+.container main .left .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.container main .left .header img {
+    width: 100px;
+}
+
+.container main .left .header h3,
+.container main .left .header h4 {
+    font-weight: 600;
+}
+
+.container main .left .header h4 {
+    font-size: 14px;
+}
+
+.container main .left .action {
+    margin-top: 8px;
+}
+
+.container main .left .action p,
+.container main .left .action a {
+    font-size: 14px;
+}
+
+.container .waves {
+    position: absolute;
+    top: 4.2rem;
+    left: 10rem;
+    transform: rotate(-90deg);
+    z-index: 888;
+}
+
+.container .waves img {
+    width: 550px;
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.1));
+}
+
+.container .waves2 {
+    position: absolute;
+    /* top: 30px; */
+    /* right: -25rem; */
+    top: 50%;
+    right: -5rem;
+    transform: rotate(140deg);
+    z-index: 888;
+}
+
+.container .waves2 img {
+    width: 800px;
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.1));
+}
+
+.container main .background {
+    background-color: #ffffff;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 68%;
+}
+
+.container main .right {
+    width: 60%;
+}
+
+.container .right img {
+    width: 900px;
+    /* margin-bottom: 10px; */
+    position: relative;
+    right: 80px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 916px) {
+    .container {
+        width: 700px;
+    }
+
+    .container main .left {
+        width: 35%;
+    }
+
+    .container main .background {
+        right: 60%;
+    }
+
+    .container .waves {
+        left: 8rem;
+    }
+
+    .container .waves2 img {
+        display: none;
+    }
+
+    .container .right img {
+        width: 900px;
+        right: 8rem;
+        top: -20px;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .header h1 {
+        font-size: 40px;
+    }
+    .header h4 {
+        margin-top: 5px;
+        font-size: 25px !important;
+    }
+    .container {
+        height: 380px;
+        width: 80%;
+        padding: 0;
+    }
+
+    .container main {
+        width: 100%;
+    }
+
+    .container main .background {
+        display: none;
+    }
+
+    .container main .left {
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .container .waves {
+        display: none;
+    }
+
+    .container .right {
+        display: none;
+    }
+
+    .container main .left .action {
+        margin-top: 10px;
+    }
+
+    .container main .left .header {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header h1 {
+        font-size: 30px;
+    }
+    .header h4 {
+        margin-top: 0px;
+        font-size: 18px !important;
+    }
+    .container {
+        width: 300px;
+        height: 350px;
+    }
+}

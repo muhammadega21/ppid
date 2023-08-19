@@ -1,0 +1,78 @@
+.new-content-wrapper .sidebar {
+    display: none;
+}
+
+.sidebar {
+    min-width: 280px;
+    width: 280px;
+    background-color: #fff;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.side-content .top-content {
+    padding: 10px;
+    position: relative;
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.side-content .top-content::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.side-content .top-content h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.side-content .side {
+    padding: 0 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    min-height: 45px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.side-content .side::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.side-content .rank-content h1 {
+    width: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.side-content .body-content {
+    margin-left: 10px;
+}
+
+.side-content .body-content * {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--black);
+    transition: 0.1s;
+}
+
+.side-content .body-content a:hover {
+    color: var(--darkblue);
+}
